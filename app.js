@@ -52,5 +52,11 @@ app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'admin.html'));
 });
 
+app.post('/upload', (req, res) => {
+  const data = req.body;
+  console.log(data);
+  res.json({ message: 'Data received' });
+});
+
 // Start the server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

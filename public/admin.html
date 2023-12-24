@@ -6,8 +6,19 @@
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="admin.js"></script>
+    <style>
+        #loading-bar {
+          width: 0;
+          height: 20px;
+          background-color: #4CAF50;
+        }
+      </style>
 </head>
 <body>
+    <h1>Loading...</h1>
+    <div id="loading-bar-container" style="width: 100%; border: 1px solid #000;">
+      <div id="loading-bar"></div>
+    </div>
     <!-- File input to select the CSV file -->
     <input type="file" id="csv-file" accept=".csv">
 
