@@ -86,6 +86,3 @@ dist
 
 # DynamoDB Local files
 .dynamodb/
-
-test.js
-app.yaml
